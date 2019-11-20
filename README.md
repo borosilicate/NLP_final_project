@@ -20,3 +20,9 @@ Thorough, Henry David -- journal entries (1837-1854)
 Trollope, Anthony - An Autobiography of Anthony Trollope (1876)
 Twain, Mark — autobiography and letters (1835-1910)
 Voltaire — autobiography and letters (1745)
+
+#numbers
+ cat -n voltaire_letters.txt | grep LETTER 
+
+#gets text
+cat voltaire_letters.txt | awk  "129 <= NR && NR <= 3738" > voltaire_letters_headings.txt 
