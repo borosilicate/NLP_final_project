@@ -2,6 +2,8 @@
 https://github.com/DigiUGA/Gutenberg_Text
 Helpful Resources:Coding Systems for Themes of Agency and Communion
 https://www.sesp.northwestern.edu/foley/instruments/agency/
+Redit article about word2vec digital humanities:
+https://www.reddit.com/r/MachineLearning/comments/4m7h4f/word_vectors_word2vec_in_eighteenthcentury/
 
 List of autobiographies/letters in Project Gutenburg:
 Anderson, Hans Christian - The True Story of my Life (1847)
