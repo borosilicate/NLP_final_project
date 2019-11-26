@@ -4,6 +4,8 @@ Helpful Resources:Coding Systems for Themes of Agency and Communion
 https://www.sesp.northwestern.edu/foley/instruments/agency/
 Redit article about word2vec digital humanities:
 https://www.reddit.com/r/MachineLearning/comments/4m7h4f/word_vectors_word2vec_in_eighteenthcentury/
+Word2Vec:
+https://colab.research.google.com/drive/1rJJifX_aL63JNqAnTOXPnXm078ejC-1n
 
 List of autobiographies/letters in Project Gutenburg:
 Anderson, Hans Christian - The True Story of my Life (1847)
@@ -28,3 +30,5 @@ Voltaire — autobiography and letters (1745)
 
 #gets text
 cat voltaire_letters.txt | awk  "129 <= NR && NR <= 3738" > voltaire_letters_headings.txt 
+
+
