@@ -1,0 +1,16 @@
+11/28/2019 -mjh
+
+# in pulled dir counting amount of docs
+ls -d */* -l | grep -v ^l | wc -l 
+248
+
+#counting QUANTITY AGENCY WORDS wc -l < agency_rankings.txt 
+ 1004
+#counting QUANTITY COMMUNION WORDS wc -l < communion_rankings.txt 
+ 1069
+
+# in main dir counting max score of COMMUNION  MAX SCORE cat communion_rankings.txt | awk '{print $1}' | perl -nle '$sum += $_ } END { print $sum' agency
+898.750000000009
+
+#in main dir counting max score of  AGENCY MAX SCORE cat agency_rankings.txt | awk '{print $1}' | perl -nle '$sum += $_ } END { print $sum'
+822.65000000001
