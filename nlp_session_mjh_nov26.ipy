@@ -1,0 +1,131 @@
+# coding: utf-8
+import Word2Vec
+import gensim
+Word2Vec()
+gensim.models.Word2Vec()
+gensim.models.Word2Vec('The monkey runs fast.')
+gensim.models.Word2Vec('The monkey runs fast. The eagle is a horse.')
+model=gensim.models.Word2Vec('The monkey runs fast. The eagle is a horse.')
+list(model.mv.vocab)
+list(model.wv.vocab)
+print(list(model.wv.vocab))
+model['e']
+model[' ']
+model['monkey']
+print(list(model.wv.vocab))
+model=gensim.models.Word2Vec('The monkey runs fast. The eagle is a horse. Dogs and monkeys are cool. Apples and oranges are fruit. Never stop and eagle from eating a fruit.')
+model.wv.vocab
+ls
+import os
+os.listdir()
+cd aworkspace/
+cd NLP_final_project/
+ls
+for i in listdir('pulled'):
+    print(i)
+    
+for i in os.listdir('pulled'):
+    print(i)
+    
+for i in os.listdir('pulled'):
+    for j in list:
+        print(i,j)
+        
+    
+for i in os.listdir('pulled'):
+    for j in os.listdir(i):
+        print(i,j)
+        
+    
+ls
+for i in os.listdir('pulled'):
+    for j in os.listdir('pulled/'+i):
+        print(i,j)
+        
+    
+for i in os.listdir('pulled'):
+    for j in os.listdir('pulled/'+i):
+        print(i,j)
+        
+import matplotlib.pyplot as plt; plt.rcdefaults()
+import numpy as np
+import matplotlib.pyplot as plt
+
+objects = ('Python', 'C++', 'Java', 'Perl', 'Scala', 'Lisp')
+y_pos = np.arange(len(objects))
+performance = [10,8,6,4,2,1]
+
+plt.bar(y_pos, performance, align='center', alpha=0.5)
+plt.xticks(y_pos, objects)
+plt.ylabel('Usage')
+plt.title('Programming language usage')
+
+plt.show()
+ls
+f=open('agency_words.txt',r+)
+f=open('agency_words.txt','r')
+agency=f.readline()
+agency
+agency=f.readlines()
+agency
+agency=f.readlines().strip()
+import spacy
+nlp = spacy.load("en_core_web_lg")
+f.close()
+agency[0]
+f=open('pulled/Letters_to_Madame_Hanska/Letters_during_1833.txt')
+haskal=f.readline()
+haskal[0]
+haskal[1]
+haskal[0]
+haskal=f.readlines()
+with open() as f:
+    mylist = f.read().splitlines() 
+    
+f.close()
+with open('pulled/Letters_to_Madame_Hanska/Letters_during_1833.txt') as f:
+    mylist = f.read().splitlines() 
+    
+mylist
+doc=nlp(mylist)
+f.close()
+with open('data.txt', 'r') as file:
+    data = file.read().replace('\n', '')
+    
+with open('pulled/Letters_to_Madame_Hanska/Letters_during_1833.txt', 'r') as file:
+    data = file.read().replace('\n', '')
+    
+data
+doc=nlp(data)
+doc.count_by
+doc.count_by()
+words = [token.text for token in doc if token.is_stop != True and token.is_punct != True]
+
+# noun tokens that arent stop words or punctuations
+nouns = [token.text for token in doc if token.is_stop != True and token.is_punct != True and token.pos_ == "NOUN"]
+
+# five most common tokens
+word_freq = Counter(words)
+common_words = word_freq.most_common(5)
+
+# five most common noun tokens
+noun_freq = Counter(nouns)
+common_nouns = noun_freq.most_common(5)
+from collections import Counter
+words = [token.text for token in doc if token.is_stop != True and token.is_punct != True]
+
+# noun tokens that arent stop words or punctuations
+nouns = [token.text for token in doc if token.is_stop != True and token.is_punct != True and token.pos_ == "NOUN"]
+
+# five most common tokens
+word_freq = Counter(words)
+common_words = word_freq.most_common(5)
+
+# five most common noun tokens
+noun_freq = Counter(nouns)
+common_nouns = noun_freq.most_common(5)
+common_nouns
+common_words
+word_freq.most_common(10)
+noun_freq.most_common(10)
+%save -r nlp_session_mjh_nov26 1-70 

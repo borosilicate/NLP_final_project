@@ -1,0 +1,306 @@
+# coding: utf-8
+ data_full='' 
+ for i in os.listdir('pulled'): 
+         for j in os.listdir('pulled/'+i): 
+                 print(i,j) 
+                 with open('pulled/'+i+'/'+j, 'r') as file:
+                         data_full =data_full+file.read().replace('\n', '') 
+                        
+import os
+ data_full='' 
+ for i in os.listdir('pulled'): 
+         for j in os.listdir('pulled/'+i): 
+                 print(i,j) 
+                 with open('pulled/'+i+'/'+j, 'r') as file:
+                         data_full =data_full+file.read().replace('\n', '') 
+                        
+ls
+cd aworkspace/
+cd NLP_final_project/
+ls
+ data_full='' 
+ for i in os.listdir('pulled'): 
+         for j in os.listdir('pulled/'+i): 
+                 print(i,j) 
+                 with open('pulled/'+i+'/'+j, 'r') as file:
+                         data_full =data_full+file.read().replace('\n', '') 
+                        
+data_full[0:10]
+for char in '-.,\n':
+    Text=data_full.replace(char,' ')
+Text = Text.lower()
+word_list = Text.split()
+from collections import Counter
+Counter(word_list).most_common()
+from collections import Counter
+counted=Counter(word_list).most_common()
+counted[0]
+counted[0:10]
+counted[0:30]
+counted[0:50]
+counted[0:100]
+ data_full='' 
+dic=[]
+ for i in os.listdir('pulled'): 
+         for j in os.listdir('pulled/'+i): 
+                 print(i,j) 
+                 with open('pulled/'+i+'/'+j, 'r') as file:
+                         dic.append(file.read().replace('\n', '') )
+                        
+                        
+dic[0]
+for i,d in enumerate(dic):
+    print(i)
+    
+for i,d in enumerate(dic):
+    #dic[i]=d.strip([',','.','?','-','_','!'])
+    print(i,end='')
+    
+dic[0]
+dic[0].lower
+dic[0].lower()
+for i,d in enumerate(dic):
+    dic[i]=d.strip([',','.','?','_','!','\\']).lower()
+    
+    
+    
+for i,d in enumerate(dic):
+    dic[i]=d.strip([',','.','?','_','!']).lower()
+    
+    
+    
+    
+for i,d in enumerate(dic):
+    dic[i]=d.strip(',','.','?','_','!','\\').lower()
+    
+    
+    
+    
+    
+for i,d in enumerate(dic):
+    dic[i]=d.lower().strip(',').strip('.').strip('?'),strip('!').replace('-',' ')
+    
+    
+    
+    
+    
+    
+for i,d in enumerate(dic):
+    dic[i]=d.lower().replace(',','').replace('.','').replace('?','').strip('!').replace('-',' ')
+    
+    
+    
+    
+    
+    
+dic[0]
+ data_full='' 
+dic=[]
+ for i in os.listdir('pulled'): 
+         for j in os.listdir('pulled/'+i): 
+                 print(i,j) 
+                 with open('pulled/'+i+'/'+j, 'r') as file:
+                         dic.append(file.read().replace('\n', ' ').lower().strip(',').strip('\'s').strip('\\').replace('-',' '))
+                        
+                        
+                        
+dic[0]
+ data_full='' 
+dic=[]
+ for i in os.listdir('pulled'): 
+         for j in os.listdir('pulled/'+i): 
+                 print(i,j) 
+                 with open('pulled/'+i+'/'+j, 'r') as file:
+                         dic.append(file.read().replace('\n', ' ').lower().strip(',').strip('\'s').strip('\\').replace('-',' ').strip(';'))
+                        
+                        
+                        
+                        
+dic[0]
+ data_full='' 
+dic2=[]
+ for i in os.listdir('pulled'): 
+         for j in os.listdir('pulled/'+i): 
+                 print(i,j) 
+                 with open('pulled/'+i+'/'+j, 'r') as file:
+                         s=file.read().replace('\n', ' ').lower()
+                         s=s.strip(',').strip('\'s').strip('\\').replace('-',' ').strip(';')
+                         dic2.append(s)
+                        
+                        
+                        
+dic2[0]
+data_full='' 
+dic2=[]
+ for i in os.listdir('pulled'): 
+         for j in os.listdir('pulled/'+i): 
+                 print(i,j) 
+                 with open('pulled/'+i+'/'+j, 'r') as file:
+                         s=file.read().replace('\n', ' ').lower()
+                         s=s.strip(',').strip('\'s').strip('\\').replace('-',' ').strip(';')
+                         s=s.replace(';',' ')
+                         s=s.replace('\'s',' ')
+                         s=s.replace('-',' ')
+                         s=s.replace('.','')
+                         s=s.replace(',','')
+                         s=s.replace('?','')
+                         s=s.replace('!','')
+                         s=s.replace('\\','')
+                         dic2.append(s)
+                        
+                        
+                        
+data_full='' 
+dic2=[]
+for i in os.listdir('pulled'): 
+    for j in os.listdir('pulled/'+i): 
+        print(i,j) 
+        with open('pulled/'+i+'/'+j, 'r') as file:
+        s=file.read().replace('\n', ' ').lower()
+        s=s.strip(',').strip('\'s').strip('\\').replace('-',' ').strip(';')
+        s=s.replace(';',' ')
+        s=s.replace('\'s',' ')
+        s=s.replace('-',' ')
+        s=s.replace('.','')
+        s=s.replace(',','')
+        s=s.replace('?','')
+        s=s.replace('!','')
+        s=s.replace('\\','')
+        dic2.append(s)
+                        
+                        
+                        
+data_full='' 
+dic2=[]
+for i in os.listdir('pulled'): 
+    for j in os.listdir('pulled/'+i): 
+        print(i,j) 
+        with open('pulled/'+i+'/'+j, 'r') as file:
+        s=file.read().replace('\n', ' ').lower()
+        s=s.strip(',').strip('\'s').strip('\\').replace('-',' ').strip(';')
+        s=s.replace(';',' ')
+        s=s.replace('\'s',' ')
+        s=s.replace('-',' ')
+        s=s.replace('.','')
+        s=s.replace(',','')
+        s=s.replace('?','')
+        s=s.replace('!','')
+        s=s.replace('\\','')
+        dic2.append(s)
+                        
+                        
+                        
+data_full='' 
+dic2=[]
+for i in os.listdir('pulled'): 
+    for j in os.listdir('pulled/'+i): 
+        print(i,j) 
+        with open('pulled/'+i+'/'+j, 'r') as file:
+            s=file.read().replace('\n', ' ').lower()
+            s=s.strip(',').strip('\'s').strip('\\').replace('-',' ').strip(';')
+            s=s.replace(';',' ')
+            s=s.replace('\'s',' ')
+            s=s.replace('-',' ')
+            s=s.replace('.','')
+            s=s.replace(',','')
+            s=s.replace('?','')
+            s=s.replace('!','')
+            s=s.replace('\\','')
+            dic2.append(s)
+                        
+                        
+                        
+dic2[0]
+for i in dic:
+    print(i[0])
+    
+for i in dic:
+    print(i[0:10])
+    
+    
+for i in dic:
+    for j in i.split():
+        print(j)
+    
+    
+first=0
+dictionary={}
+for i in dic:
+    for j in i.split():
+        if(first==0):
+            if(j in dictionary):
+                dictionary[j]+=1
+            else:
+                dictionary[j]=1
+        else:
+            if(j in dictionary): 
+                dictionary[j]+=1
+    first+=1
+    
+dictionary[0]
+dictionary
+next(iter(dictionary))
+first=0
+dictionary={}
+for i in dic:
+    for j in i.split():
+        j=j.strip('!')
+        j=j.strip('.')
+        j=j.strip(',')
+        j=j.strip('\'')
+        if(first==0):
+            if(j in dictionary):
+                dictionary[j]+=1
+            else:
+                dictionary[j]=1
+        else:
+            if(j in dictionary): 
+                dictionary[j]+=1
+    first+=1
+    
+next(iter(dictionary))
+next(iter( my_dict.items() ))
+next(iter( dictionary.items() ))
+next(iter( dictionary.items() ).next)
+next(next(iter( dictionary.items() )))
+key=operator.itemgetter(1)
+for w in sorted(dictionary, key=dictionary.get, reverse=True):
+  print(w, dictionary[w])
+  
+for w in sorted(dictionary, key=dictionary.get, reverse=True):
+  print(w, dictionary[w])
+  
+import spacy
+
+nlp = spacy.load("en_core_web_lg")
+nlp.vocab
+nlp.vocab()
+nlp.vocab.has_vector('ice')
+for w in sorted(dictionary, key=dictionary.get, reverse=True):
+    if (nlp.vocab.has_vector('w') ):
+        print('Has:',w, dictionary[w]) 
+    else:
+      print('Not',w, dictionary[w])
+  
+nlp.vocab.has_vector('asdf')
+nlp.vocab.has_vector('SATAN')
+nlp.vocab.has_vector('SATAN-sa')
+nlp.vocab.has_vector('SATAN-tiger')
+nlp.vocab.has_vector('SATANtiger')
+nlp.vocab.has_vector('SATANt')
+nlp.vocab.has_vector('evolutionarily')
+nlp.vocab.has_vector('suicidal.[1]')
+for w in sorted(dictionary, key=dictionary.get, reverse=True):
+    if (nlp.vocab.has_vector(w) ):
+        print('Has:',w, dictionary[w]) 
+    else:
+      print('Not',w, dictionary[w])
+  
+for w in sorted(dictionary, key=dictionary.get, reverse=True):
+    if (nlp.vocab.has_vector(w) ):
+        print('Has:',w, dictionary[w]) 
+    else:
+      print('Not',w, dictionary[w])
+  
+print('end')
+print('end')

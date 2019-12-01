@@ -14,3 +14,12 @@ ls -d */* -l | grep -v ^l | wc -l
 
 #in main dir counting max score of  AGENCY MAX SCORE cat agency_rankings.txt | awk '{print $1}' | perl -nle '$sum += $_ } END { print $sum'
 822.65000000001
+
+#unique values in names of communion and agency 
+824  Unique communion words
+728  Unique agency words
+
+#created mostcommon 690 words
+
+
+
