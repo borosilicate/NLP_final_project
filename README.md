@@ -1,9 +1,14 @@
-# NLP_final_project
+# NLP_final_project     Texts
 https://github.com/DigiUGA/Gutenberg_Text
-Helpful Resources:Coding Systems for Themes of Agency and Communion
+
+#Helpful Resources:Coding Systems for Themes of Agency and Communion
 https://www.sesp.northwestern.edu/foley/instruments/agency/
-Redit article about word2vec digital humanities:
+
+#Article about word2vec digital humanities:
 https://www.reddit.com/r/MachineLearning/comments/4m7h4f/word_vectors_word2vec_in_eighteenthcentury/
+http://bookworm.benschmidt.org/posts/2015-10-25-Word-Embeddings.html
+http://ryanheuser.org/word-vectors-1/
+http://ryanheuser.org/word-vectors-2/
 
 Word2Vec:
 https://colab.research.google.com/drive/1rJJifX_aL63JNqAnTOXPnXm078ejC-1n
@@ -30,6 +35,30 @@ Voltaire — autobiography and letters (1745)
  cat -n voltaire_letters.txt | grep LETTER 
 
 #gets text
-cat voltaire_letters.txt | awk  "129 <= NR && NR <= 3738" > voltaire_letters_headings.txt 
+cat voltaire_letters.txt | awk  "129 <= NR && NR <= 3738" > voltaire_letters_headings.txt
+
+1.) Setup 			 Tool/ENV/Setup
+
+Python 3.7.3
+MacOS High Sierra
+conda install numpy 
+conda install spacy
+conda install requests
+#This will be a siginificant amount of memory 0.6 gb
+conda install -c conda -forge spacy-model-en_core_web_lg
+
+
+
+5.) The project was done with a combination of scripts working in an ordered fashion.
+    Collect documents
+    Recieved Words thematicly related to agency and communion
+    web scraped synonyms
+    Load spacy word embeddings
+    Collect words from docs
+    Compare similarity between synonyms and words common to docs
+    Use matplotlib to plot scores
+
+https://colab.research.google.com/drive/1rJJifX_aL63JNqAnTOXPnXm078ejC-1n
+
 
 
