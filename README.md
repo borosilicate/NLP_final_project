@@ -47,7 +47,15 @@ conda install requests
 #This will be a siginificant amount of memory 0.6 gb
 conda install -c conda -forge spacy-model-en_core_web_lg
 
+3.)     #gathering synonyms 
+	python agency_synonyms.py
+	python communion_synonyms.py
 
+
+
+4.)
+	Michael Joseph Hearn
+	
 
 5.) The project was done with a combination of scripts working in an ordered fashion.
     Collect documents

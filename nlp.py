@@ -2,9 +2,7 @@ import gensim
 import spacy
 import matplotlib.pyplot as plt; plt.rcdefaults()
 import numpy as np
-import matplotlib.pyplot as plt
 import os
-import matplotlib.pyplot as plt
 
 nlp = spacy.load("en_core_web_lg")
 #model=gensim.models.Word2Vec('The monkey runs fast. The eagle is a horse.')
